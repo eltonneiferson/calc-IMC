@@ -1,6 +1,6 @@
 # Cálculo do IMC
 
-Aplicação para o cáuculo do IMC, onde só é permirido digitar números nos inputs, limitados a 3 caracteres:
+Aplicação para o cáuculo do IMC, onde só é permitido digitar números nos inputs, limitados a 3 caracteres:
 
 <img src="/imgs-readme/Cáuculo-do-IMC.png">
  
