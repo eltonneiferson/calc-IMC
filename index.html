@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@eltonneiferson">
+    <meta name="description" content="Calculadora para o IMC">
+    <title>IMC</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="alert-error">
+        <p>Digite somente números!</p>
+    </div>
+    
+    <form class="card">
+        <h1>Calcule seu I.M.C</h1>
+
+        <div class="input-wrapper">
+            <label for="weight">Peso (Kg)</label>
+            <input type="text" id="weight" placeholder="60" maxlength="3" required>
+        </div>
+        
+        <div class="input-wrapper">
+            <label for="height">Altura (Cm)</label>
+            <input type="text" id="height" placeholder="180" maxlength="3" required>
+        </div>
+        
+        <button type="submit">Calcular IMC</button>
+        
+        <h3>I.M.C = Peso ÷ (Altura × Altura)</h3>
+    </form>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <button class="close"><img src="img/x-10366.svg" alt="X para fechar modal"></button>
+            <p class="text-modal">Seu I.M.C é de <span>XX,XX</span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/bg-body.jpg);
+    background-size: cover;
+    background-position: center left;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #0C3440;
+}
+
+form.card {
+    width: 22rem;
+    padding: 1.5rem;
+    background-color: #fdfcfdc9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem 0;
+
+    display: grid;
+    gap: 1.5rem;
+}
+
+form label {
+    text-align: start;
+    color:  #00453A;
+    display: block;
+    margin-bottom: .3rem;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid  rgba(73, 80, 87, 0.3);
+    background-color: #DCE2E9;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #212529;
+}
+
+form input:focus {
+    outline: 2px solid red;
+}
+
+form input::placeholder {
+    color: rgba(73, 80, 87, 0.5);
+}
+
+form button {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background-color: #02799D;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background .3s;
+}
+
+form button:hover {
+    background-color: #01475c;
+    transform: scale(1.1);
+}
+
+form h3 {
+    font-weight: bold;
+    color: #0C3440;
+}
+
+.modal-wrapper.modal-open {
+    visibility: visible;
+}
+
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    display: grid;
+    place-content: center;
+
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    background-color: white;
+    width: max-content;
+    padding: 2.5rem 2rem;
+    border-radius: .5rem;
+}
+
+button.close {
+    background: none;
+    border: none;
+    font-weight: bold;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+div.alert-error {
+    position: absolute;
+    inset: 0 0 auto 0;
+    background-color: red;
+    color: white;
+    padding: .9rem 0;
+    font-weight: bold;
+
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: transform .5s;
+}
+
+.alert-error.alert-open {
+    visibility: visible;
+    transform: translateY(0);
+}
+
+p.text-modal {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #01475c;
+}
+
+p span {
+    color: red;
+}
