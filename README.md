@@ -8,6 +8,6 @@ Caso digite qualquer caractere que não seja número a aplicação irá exibir u
 
 <img src="/imgs-readme/Cáuculo-do-IMC-Erro.png">
 
-Após inserir os valores de peso e altura a aplicação irá realizar o cáuculo, e para fazer uma nova operação basta fechar o modal no X ou utilizando a tecla ESC:
+Após inserir os valores de peso e altura a aplicação irá realizar o calculo, e para fazer uma nova operação basta fechar o modal no X ou utilizar a tecla ESC:
 
 <img src="/imgs-readme/Cáuculo-do-IMC-Resultado.png">
